@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Web Developing Company"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-title" content="Sate">
     <meta name="application-name" content="Sate">
@@ -13,82 +14,82 @@
     <link rel="icon" type="image/png" sizes="16x16" href="ico/favicons/favicon-16x16.png">
     <link rel="manifest" href="ico/favicons/site.webmanifest">
     <link rel="mask-icon" href="ico/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sate</title>
     <style>
+        @font-face {
+            font-family: "e-Ukraine";
+            src: url(fonts/e-Ukraine-Regular.otf);
+            font-weight: 400px;
+        }
+        @font-face {
+            font-family: "e-Ukraine";
+            src: url(fonts/e-Ukraine-Light.otf);
+            font-size: 300px;
+        }
+
         html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-@font-face {
-    font-family: "e-Ukraine";
-    src: url(fonts/e-Ukraine-Regular.otf);
-    font-weight: 400px;
-}
-
-@font-face {
-    font-family: "e-Ukraine";
-    src: url(fonts/e-Ukraine-Light.otf);
-    font-size: 300px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    font-family: inherit;
-}
-
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        button, input, a {
+            text-decoration: none;
+            color: inherit;
+            font-family: inherit;
+            border: none;
+            outline: none;
+        }
+        button {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body class="body">
     <header class="container">
         <nav class="nav">
-            <a href=""><img src="ico/logo_w.svg" alt="logo"></a>
+            <a href="#"><img src="./ico/logo_w.svg" alt="logo"></a>
             <ul class="nav_elements">
                 <a href="#"><li>Головна</li></a>
                 <a href="#"><li>Про нас</li></a>
@@ -96,23 +97,26 @@ a {
                 <a href="#"><li>Портфоліо</li></a>
             </ul>
             <button class="contact-btn-w">Зв'язок з нами</button>
-            <button class="mode-btn-w"><img src="ico/lunation.svg" alt="btn"></button>
+            <button class="mode-btn-w"><img src="./ico/lunation.svg" alt="btn"></button>
         </nav>
     </header>
 
-    <article class="hero">
+    <main>
+        <article class="hero">
             <div class="container">
-            <div class="wrapper">
-                <span class="num">01</span>
-                <span class="section-name">Головна</span>
-                <h1 class="title">Надихаємося <br> вашою уявою</h1>
-                <h3 class="subtitle">Команда розробників «Sate»</h3>
+                <div class="wrapper">
+                    <span class="num">01</span>
+                    <span class="section-name">Головна</span>
+                    <h1 class="title">Надихаємося <br> вашою уявою</h1>
+                    <h3 class="subtitle">Команда розробників «Sate»</h3>
+                </div>
             </div>
-        </div>
-        <div class="blur">
-        </div>
-        <img class="d3" src="img/figurka.svg" alt="figurka">
-    </article>
-    <script href="script.js"></script>
+            <div class="blur">
+            </div>
+            <img class="d3" src="./img/figurka.svg" alt="figurka">
+        </article>
+    </main>
+
+    <script href="./js/script.js"></script>
 </body>
 </html>
