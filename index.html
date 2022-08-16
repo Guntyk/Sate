@@ -72,13 +72,15 @@
         }
         html {
             scroll-behavior: smooth;
+            box-sizing: border-box;
         }
         button, input, a {
-            text-decoration: none;
-            color: inherit;
             font-family: inherit;
+            color: inherit;
             border: none;
             outline: none;
+            background: transparent;
+            text-decoration: none;
         }
         button {
             cursor: pointer;
@@ -87,35 +89,142 @@
 </head>
 <body class="body">
     <header class="container">
-        <nav class="nav">
-            <a href="#"><img src="./ico/logo_w.svg" alt="logo"></a>
-            <ul class="nav_elements">
-                <a href="#"><li>Головна</li></a>
-                <a href="#"><li>Про нас</li></a>
-                <a href="#"><li>Наші переваги</li></a>
-                <a href="#"><li>Портфоліо</li></a>
-            </ul>
-            <button class="contact-btn-w">Зв'язок з нами</button>
-            <button class="mode-btn-w"><img src="./ico/lunation.svg" alt="btn"></button>
-        </nav>
+        <div class="flex justify align">
+            <a href="#"><img src="./ico/logos/logo_w.svg" alt="logo_w"></a>
+            <nav>
+                <ul class="navigation flex justify">
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Наші переваги</a></li>
+                    <li><a href="#">Портфоліо</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn-light on">Зв’язок з нами</button>
+            <button class="theme"><img src="./ico/theme/lunation.svg" alt="lunation"></button>
+        </div>
     </header>
 
     <main>
         <article class="hero">
-            <div class="container">
-                <div class="wrapper">
-                    <span class="num">01</span>
-                    <span class="section-name">Головна</span>
-                    <h1 class="title">Надихаємося <br> вашою уявою</h1>
-                    <h3 class="subtitle">Команда розробників «Sate»</h3>
+            <div class="container flex align">
+                <div class="wrapper flex column">
+                    <span class="number">01</span><span class="uptitle">Головна</span>
+                    <h1 class="title-1">Надихаємося вашою уявою</h1>
+                    <p class="article">Команда розробників «Sate»</p>
+                </div>
+                <img src="./img/figurka.svg" alt="Figure" class="atom">
+            </div>
+            <span class="absolute blur"></span>
+            <img src="./img/background blur.png" alt="blur" class="absolute figure">
+        </article>
+
+        <article class="about container">
+            <div class="flex justify align">
+                <div class="flex column">
+                    <span class="uptitle">Про нас</span>
+                    <span class="number">02</span>
+                </div>
+                <div class="flex column">
+                    <img src="./ico/background/triangle.svg" alt="triangle" class="triangle">
+                    <img src="./ico/background/triangle.svg" alt="triangle" class="triangle">
+                </div>
+                <span class="line"></span>
+                <div class="about-text flex column">
+                    <h2 class="title-2">Ми українська команда веб-розробників «Sate»</h2>
+                    <p class="article">Наша команда займається веб-розробкою та створенням сайтів на замовлення для фізичних та юридичних осіб</p>
                 </div>
             </div>
-            <div class="blur">
+        </article>
+
+        <article class="advantages">
+            <div class="container">
+                <div class="flex align">
+                    <div class="flex column">
+                        <span class="uptitle">Наші переваги</span>
+                        <span class="number">03</span>
+                    </div>
+                    <ul class="list flex column justify">
+                        <li class="flex">
+                            <img src="./ico/advantages/clock.svg" alt="clock" class="icon">
+                            <div class="flex column">
+                                <h3 class="title-3">Швидкість</h3>
+                                <p class="article p-a">Звичайний сайт-лендінг займає не більше 7-15 днів</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <img src="./ico/advantages/coin.svg" alt="coin" class="icon">
+                            <div class="flex column">
+                                <h3 class="title-3">Ціна</h3>
+                                <p class="article p-a">Наша команда тільки недавно почала свою діяльність, тому ми виконуємо роботу за бюджетну ціну</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <img src="./ico/advantages/smile.svg" alt="smile" class="icon">
+                            <div class="flex column">
+                                <h3 class="title-3">Якість</h3>
+                                <p class="article p-a">Робимо якісні продукти, які легкі в використанні та відповідають всім сучасним стилям дизайну</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <img src="./ico/background/star.svg" alt="star" class="star">
+                </div>
             </div>
-            <img class="d3" src="./img/figurka.svg" alt="figurka">
+        </article>
+
+        <article class="portfolio container">
+            <div class="flex column">
+                <div class="flex column">
+                    <span class="uptitle">Портфоліо</span>
+                    <span class="number">04</span>
+                </div>
+                <div class="works flex wrap">
+                    <div class="work"><img src="./img/works/card-1.jpg" alt="site"></div>
+                    <div class="work"><img src="./img/works/card-2.jpg" alt="site"></div>
+                    <div class="work"><img src="./img/works/card-3.jpg" alt="site"></div>
+                    <div class="work"><img src="./img/works/card-4.jpg" alt="site"></div>
+                    <div class="work"><img src="./img/works/card-5.jpg" alt="site"></div>
+                </div>
+                <button class="btn btn-light on works-btn">Більше робіт</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="container flex column">
+                <span class="uptitle">Форма зв’язку</span>
+                <span class="number">05</span>
+            </div>
+            <div class="form flex center">
+                <img src="./ico/background/triangle.svg" alt="triangle" class="triangle-f">
+                <form action="#" class="form-send flex column">
+                    <input type="text" class="input" placeholder="Ім’я">
+                    <input type="text" class="input" placeholder="Номер телефону">
+                    <input type="text" class="input" placeholder="Електронна адреса">
+                    <button type="submit" class="btn btn-light off">Надіслати</button>
+                </form>
+                <img src="./ico/background/triangle.svg" alt="triangle" class="triangle-f">
+            </div>
         </article>
     </main>
 
+    <footer class="footer">
+        <div class="container flex justify">
+            <div class="f-wrapper flex">
+                <a href="#" class="logo"><img src="./ico/logos/logo_d.svg" alt="logo_d"></a>
+                <nav>
+                    <ul class="navigation flex column">
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Про нас</a></li>
+                        <li><a href="#">Наші переваги</a></li>
+                        <li><a href="#">Портфоліо</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="f-wrapper flex column">
+                <button class="theme"><img src="./ico/theme/lunation-w.svg" alt="lunation"></button>
+                <button class="btn btn-dark on footer-btn">Зв’язок з нами</button>
+            </div>
+        </div>
+    </footer>
     <script href="./js/script.js"></script>
 </body>
 </html>
