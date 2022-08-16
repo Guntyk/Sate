@@ -49,3 +49,57 @@
 .mode-btn-w:active{
     color: #312D2D;
 }
+
+.num {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #A0A0A0;
+}
+
+.section-name {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #A0A0A0;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    color: #312D2D;
+    margin: 14px 0 34px 0;
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #312D2D;
+    margin-top: 15px;
+}
+
+.hero {
+    align-items: center;
+    background: #F3F3F3;
+    padding: 132px 0 161px 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.blur {
+    max-width: 720px;
+    background: rgba(247, 247, 247, 0.12);
+    filter: blur(21px);
+    -webkit-filter: blur(21px);
+}
+
+.d3 {
+    position: absolute;
+    left: 653px;
+    top: 121px;
+}
