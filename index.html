@@ -64,6 +64,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 @font-face {
     font-family: "e-Ukraine";
     src: url(fonts/e-Ukraine-Regular.otf);
@@ -75,12 +76,27 @@ html {
     src: url(fonts/e-Ukraine-Light.otf);
     font-size: 300px;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
     </style>
 </head>
-<body>
-    <header>
-        <nav>
-            
+<body class="body">
+    <header class="container">
+        <nav class="nav">
+            <a href=""><img src="ico/logo_w.svg" alt="logo"></a>
+            <ul class="nav_elements">
+                <a href="#"><li>Головна</li></a>
+                <a href="#"><li>Про нас</li></a>
+                <a href="#"><li>Наші переваги</li></a>
+                <a href="#"><li>Портфоліо</li></a>
+            </ul>
+            <button class="contact-btn-w">Зв'язок з нами</button>
+            <button class="mode-btn-w"><img src="ico/lunation.svg" alt="btn"></button>
         </nav>
     </header>
 </body>

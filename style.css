@@ -1,0 +1,51 @@
+.body {
+    font-family: "e-Ukraine";
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    height: 122px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_elements {
+    display: flex;
+    justify-content: space-around;
+    width: 529px;
+}
+
+.contact-btn-w {
+    padding: 12px 33px;
+    font-family: "e-Ukraine";
+    background: none;
+    border: 1px solid #312D2D;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-btn-w:hover {
+    background: #F3F3F3;
+}
+
+.contact-btn-w:active {
+    color: #fff;
+    background: #312D2D;
+}
+
+.mode-btn-w {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mode-btn-w:active{
+    color: #312D2D;
+}
